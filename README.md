@@ -10,9 +10,14 @@ What should we return when `needle` is an empty string? This is a great question
 
 For the purpose of this problem, we will return 0 when `needle` is an empty string. This is consistent to C's `strstr()` and Java's `indexOf()`.
 
-#### Solution
+#### Solution 1: Top-Down Iterative Approach
 
-The solution in `strStr.js`, uses a top-down iterative approach, beating 99% of all previous Leetcode submissions.
+The solution in `strStr.js`, uses a top-down iterative approach, beating 95% of all previous Leetcode submissions.
+
+#### Solution 2: Top-Down Iterative Approach (Fail Fast)
+The solution in `strStr-fail-fast.js`, also uses a top-down iterative approach, but is designed to fall fast when encountering fringe cases.This improves performance, beating almost 100% of all previous Leetcode submissions.
+
+
 
 ##### Example 1:
 ```
